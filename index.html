@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>Snake Game</title>
+    <style>
+      h1
+      {
+        text-align:center;
+        font-family:impact;
+        margin:10px;
+      }
+      canvas
+      {
+        box-shadow:5px 5px 6px rgba(0,0,0,0.4);
+        position:absolute;
+        left:30%;
+      }
+      .dragon
+      {
+        background-size: cover;
+        background-position: center;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+      }
+      #dragon1
+      {
+        background-image: url("images/dragon1.gif");
+        top: 15%;
+        left: 65%;
+        display: none;
+      }
+      #dragon2
+      {
+        background-image: url("images/dragon2.gif");
+        transform: rotateY(180deg);
+        top: 15%;
+        left:9%;
+        display: none;
+
+
+      }
+      .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+    </style>
+  </head>
+  <body class="stop-scrolling">
+    <h1>Snake Game</h1>
+    <canvas height="608px" width="608px" id="canvas"></canvas>
+    <div class="dragon" id="dragon1"></div>
+    <div class="dragon" id="dragon2"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
